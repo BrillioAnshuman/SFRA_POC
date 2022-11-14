@@ -1,0 +1,15 @@
+<isscript>
+        var assets = require('*/cartridge/scripts/assets.js');
+        assets.addJs('product/wishlistHeart.js');
+</isscript>
+<div class="image-container">
+    <a href="${pdict.urls.product}">
+        <img class="tile-image"
+             src="${product.images.dynamic[0].url}"
+             alt="${product.productName}"
+             title="${product.images.dynamic[0].title}"
+             itemprop="image"/>
+    </a>
+    
+   
+</div>
