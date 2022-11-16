@@ -24,6 +24,12 @@ module.exports = function productTile(product, apiProduct, productType) {
     }
 
     decorators.searchVariationAttributes(product, productSearchHit);
+   
+    decorators.badge(product, apiProduct);
+    var varModel  = apiProduct.variationModel;
+	var varAttrColor = varModel.getProductVariationAttribute("color");
+    var selectableColors = apiProduct.variationModel.getAllValues( varAttrColor );
+  
 
     return product;
 };
